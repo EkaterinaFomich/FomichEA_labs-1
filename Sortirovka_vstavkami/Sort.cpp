@@ -3,7 +3,7 @@
 
 using namespace std;
 
-void InsertSort(int *mas, int n) // функция, осуществляющая сортировку вставками
+void InsertSort(int *mas, int n) // С„СѓРЅРєС†РёСЏ, РѕСЃСѓС‰РµСЃС‚РІР»СЏСЋС‰Р°СЏ СЃРѕСЂС‚РёСЂРѕРІРєСѓ РІСЃС‚Р°РІРєР°РјРё
 {
     int key=0, temp=0;
     for (int i=0; i<n-1; i++)
@@ -20,7 +20,7 @@ void InsertSort(int *mas, int n) // функция, осуществляющая сортировку вставками
         }
         mas[key]=temp;
     }
-    cout<<endl<<"Результирующий массив: ";
+    cout<<endl<<"Р РµР·СѓР»СЊС‚РёСЂСѓСЋС‰РёР№ РјР°СЃСЃРёРІ: ";
     for (int i=0; i<n; i++)
         cout<<mas[i]<<" ";
 }
@@ -30,12 +30,12 @@ int main ()
 {
     setlocale(LC_ALL, "Rus");
     int n;
-    cout<<"Количество элементов в массиве > ";
+    cout<<"РљРѕР»РёС‡РµСЃС‚РІРѕ СЌР»РµРјРµРЅС‚РѕРІ РІ РјР°СЃСЃРёРІРµ > ";
     cin>>n;
     int *mas=new int[n];
     for (int i=0; i<n; i++)
     {
-        cout<<i+1<<" элемент > ";
+        cout<<i+1<<" СЌР»РµРјРµРЅС‚ > ";
         cin>>mas[i];
     }
     InsertSort(mas, n);
